@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+}
+
+h1 {
+    color: #ff4081;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #ff4081;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    background-color: #ff4081;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e73370;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Media queries para responsividade em todos os iPhones */
+@media (max-width: 320px) { /* iPhone SE (1st and 2nd generation), iPhone 5/5s/5c */
+    .container {
+        padding: 20px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #resultado {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 375px) { /* iPhone 6/7/8, iPhone X/XS/11 Pro, iPhone 12 Mini */
+    .container {
+        padding: 30px;
+    }
+
+    input, button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #resultado {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 414px) { /* iPhone 6/7/8 Plus, iPhone XR/11, iPhone 12/12 Pro, iPhone 13/13 Pro */
+    .container {
+        padding: 35px;
+    }
+
+    input, button {
+        font-size: 17px;
+        padding: 14px;
+    }
+
+    #resultado {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 415px) and (max-width: 768px) { /* iPhone 12 Pro Max, iPhone 13 Pro Max */
+    .container {
+        padding: 40px;
+    }
+
+    input, button {
+        font-size: 18px;
+        padding: 16px;
+    }
+
+    #resultado {
+        font-size: 26px;
+    }
+}

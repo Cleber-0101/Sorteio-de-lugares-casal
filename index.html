@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio de Lugares</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="name-input">
+        <h1>Insira seus nomes</h1>
+        <div class="input-group">
+            <input type="text" id="name1" placeholder="Nome da Dona encrenca">
+            <input type="text" id="name2" placeholder="Nome do Perfeito maravilhoso reverendo ">
+        </div>
+        <button onclick="proceed()">Prosseguir</button>
+    </div>
+    
+    <div class="container" id="place-input" style="display:none;">
+        <h1 id="title">Para onde nós vamos no Dia 12</h1>
+        <div class="input-group">
+            <input type="text" id="place1" placeholder="Lugar 1">
+            <input type="text" id="place2" placeholder="Lugar 2">
+            <input type="text" id="place3" placeholder="Lugar 3">
+        </div>
+        <button onclick="sortearLugar()">Sortear Lugar</button>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
